@@ -29,7 +29,7 @@
                         @csrf
                         @method('PUT')
                         <div class="form-group">
-                            <label>Judul</label>
+                            <label>Nama Prestasi</label>
                             <input type="text" class="form-control" value="{{ $prestasi->judul }}" name="judul"
                                 required>
 
@@ -43,10 +43,7 @@
                             <img src="{{ asset('uploads/' . $prestasi->gambar_prestasi) }}" width="100" alt="">
                         </div>
 
-                        <div class="form-group">
-                            <label for="deskripsi">Deskripsi</label>
-                            <textarea name="deskripsi" id="" class="form-control">{{ $prestasi->deskripsi }}</textarea>
-                        </div>
+
 
 
                         <div class="form-group">

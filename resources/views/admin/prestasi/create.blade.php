@@ -28,7 +28,7 @@
                     <form action="{{ route('prestasiadmin.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
-                            <label>Judul</label>
+                            <label>Nama Prestasi</label>
                             <input type="text" class="form-control  @error('judul') is-invalid @enderror"
                                 placeholder="Masukan Judul" name="judul" required>
                             @error('judul')
@@ -41,10 +41,7 @@
                             <input type="file" class="form-control" id="gambar" placeholder="gambar"
                                 name="gambar_prestasi" required>
                         </div>
-                        <div class="form-group">
-                            <label>Deskripsi</label>
-                            <textarea required name="deskripsi" class="form-control" id=""></textarea>
-                        </div>
+
 
 
                         <div class="form-group">

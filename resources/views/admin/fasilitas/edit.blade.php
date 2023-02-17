@@ -29,7 +29,7 @@
                         @csrf
                         @method('PUT')
                         <div class="form-group">
-                            <label>Judul</label>
+                            <label>Nama Fasilitas</label>
                             <input type="text" class="form-control" value="{{ $fasilitas->nama }}" name="nama"
                                 required>
 

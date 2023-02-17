@@ -125,7 +125,7 @@
 
                                         <h4>{{ $data->judul }}</h4>
                                         <p>
-                                            {{ $data->deskripsi }}
+                                            {!! $data->deskripsi !!}
                                         </p>
 
 
@@ -232,9 +232,9 @@
                                     <h4>
                                         <a href="{{ route('detail-kegiatan', $data->id) }}">{{ $data->judul }}</a>
                                     </h4>
-                                    <!-- <p>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </p> -->
+                                    <p>
+                                        {!! $data->deskripsi = Str::of($data->deskripsi)->substr(0, 150) !!}
+                                    </p>
 
                                 </div>
                                 <span class="">

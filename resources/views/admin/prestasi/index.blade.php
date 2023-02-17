@@ -46,7 +46,7 @@
                                                     aria-label="Action: activate to sort column ascending">No</th>
                                                 <th style="width: 126.281px;" class="sorting" tabindex="0"
                                                     aria-controls="add-row" rowspan="1" colspan="1"
-                                                    aria-label="Action: activate to sort column ascending">Judul</th>
+                                                    aria-label="Action: activate to sort column ascending">Nama Prestasi</th>
 
 
                                                 <th style="width: 126.281px;" class="sorting" tabindex="0"

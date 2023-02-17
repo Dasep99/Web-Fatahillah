@@ -26,7 +26,7 @@
                     <form action="{{ route('adminfasilitas.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
-                            <label>Judul</label>
+                            <label>Nama Fasilitas</label>
                             <input type="text" class="form-control" placeholder="Masukan Judul" name="nama" required>
 
                         </div>

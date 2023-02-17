@@ -41,7 +41,7 @@ class PrestasiController extends Controller
     {
         $this->validate($request, [
             'judul' => 'required|min:4',
-            'deskripsi' => 'required',
+
             'gambar_prestasi' => 'required',
 
         ]);
@@ -51,7 +51,7 @@ class PrestasiController extends Controller
 
       Prestasi::create([
         'judul' => $request->judul,
-        'deskripsi' => $request->deskripsi,
+
         'gambar_prestasi' => $request->file('gambar_prestasi')->store('prestasi'),
 
 
@@ -98,7 +98,7 @@ class PrestasiController extends Controller
             $prestasi = Prestasi::find($id);
             $prestasi->update([
                 'judul' => $request->judul,
-                'deskripsi' => $request->deskripsi,
+
 
             ]);
 
@@ -110,7 +110,7 @@ class PrestasiController extends Controller
             Storage::delete($prestasi->gambar_prestasi);
             $prestasi->update([
                 'judul' => $request->judul,
-                'deskripsi' => $request->deskripsi,
+
 
                 'gambar_prestasi' => $request->file('gambar_prestasi')->store('prestasi')
             ]);

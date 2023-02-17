@@ -72,7 +72,7 @@
                                                     <td>{{ $index + $profil->firstItem() }}</td>
                                                     <td>{{ $row->judul }}</td>
 
-                                                    <td>{{ $data = Str::of($row->deskripsi)->substr(0, 50) }}
+                                                    <td>{!! $data = Str::of($row->deskripsi)->substr(0, 50) !!}
                                                     </td>
 
 
