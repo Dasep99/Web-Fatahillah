@@ -4,7 +4,7 @@ namespace App\Http\Controllers\users;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\tentang;
+use App\Models\Tentang;
 
 class TentangController extends Controller
 {

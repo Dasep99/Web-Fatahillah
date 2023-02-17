@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>SMP IT FATAHILLAH</title>
+    <link rel="shortcut icon" href=" {{ asset('assets/users/img/logo.png') }}">
+    <title> SMP IT FATAHILLAH</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -47,7 +47,7 @@
 
 
     @yield('isicontent')
-<main>
+    <main>
 
 
 
@@ -72,7 +72,7 @@
     <script src="{{ asset('assets/users/vendor/glightbox/js/glightbox.min.js') }}"></script>
     <script src="{{ asset('assets/users/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
     <script src="{{ asset('assets/users/vendor/swiper/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/users/vendor/php-email-form/validate.js') }}"></script>
+    {{-- <script src="{{ asset(assets / users / vendor / php - email - form / validate . js) }}"></script> --}}
 
     <!-- Template Main JS File -->
     <script src="{{ asset('assets/users/js/main.js') }}"></script>

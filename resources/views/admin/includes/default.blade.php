@@ -3,9 +3,10 @@
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Web Informasi</title>
+    <link rel="shortcut icon" href=" {{ asset('assets/users/img/logo.png') }}">
+    <title>SMP IT Fatahillah</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-    <link rel="icon" href="{{ asset('assets/img/icon.ico') }}" type="image/x-icon" />
+{{--    <link rel="icon" href="{{ asset('assets/img/icon.ico') }}" type="image/x-icon" />--}}
 
 
 

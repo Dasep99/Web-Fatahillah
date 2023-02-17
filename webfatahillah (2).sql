@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 09, 2023 at 03:49 PM
+-- Generation Time: Feb 17, 2023 at 03:53 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -36,6 +36,14 @@ CREATE TABLE `carousels` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `carousels`
+--
+
+INSERT INTO `carousels` (`id`, `judul`, `deskripsi`, `gambar`, `created_at`, `updated_at`) VALUES
+(2, 'Selamat Datang di', '<p>SMP IT Fatahillah</p>', 'carousel/9gBW5pWahjxoQqgpzwD0DVWp4W86VjQIeq4qIBPu.jpg', '2023-02-13 07:18:18', '2023-02-13 07:18:18'),
+(3, 'Selamat Datang di', '<p>Lorem Ipsum</p>', 'carousel/cZsqmoZTeepf9Er6fzwGF9stHY4g3bFFF1R9tYrJ.jpg', '2023-02-13 07:31:14', '2023-02-13 07:31:14');
+
 -- --------------------------------------------------------
 
 --
@@ -49,6 +57,13 @@ CREATE TABLE `ekstrakurikulers` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `ekstrakurikulers`
+--
+
+INSERT INTO `ekstrakurikulers` (`id`, `judul`, `deskripsi`, `created_at`, `updated_at`) VALUES
+(1, 'Lorem Ipsum is simply dummy text', '<p>1.&nbsp;Lorem Ipsum is simply dummy text&nbsp;</p>\r\n\r\n<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>\r\n\r\n<p>2.&nbsp;Lorem Ipsum is simply dummy text&nbsp;</p>\r\n\r\n<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>\r\n\r\n<p>3.&nbsp;Lorem Ipsum is simply dummy text&nbsp;</p>\r\n\r\n<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>\r\n\r\n<p>4.&nbsp;Lorem Ipsum is simply dummy text&nbsp;</p>\r\n\r\n<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>', '2023-02-16 19:05:47', '2023-02-16 19:05:47');
 
 -- --------------------------------------------------------
 
@@ -80,6 +95,13 @@ CREATE TABLE `fasilitas` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `fasilitas`
+--
+
+INSERT INTO `fasilitas` (`id`, `nama`, `deskripsi`, `created_at`, `updated_at`) VALUES
+(1, 'Lorem Ipsum is simply dummy text', '<p>1.&nbsp;<strong>Lorem Ipsum</strong>&nbsp;is simply dummy text</p>\r\n\r\n<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>\r\n\r\n<p>2.&nbsp;<strong>Lorem Ipsum</strong>&nbsp;is simply dummy text</p>\r\n\r\n<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>\r\n\r\n<p>3.&nbsp;<strong>Lorem Ipsum</strong>&nbsp;is simply dummy text</p>\r\n\r\n<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>', '2023-02-16 19:18:20', '2023-02-16 19:18:20');
+
 -- --------------------------------------------------------
 
 --
@@ -108,6 +130,15 @@ CREATE TABLE `gurus` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `gurus`
+--
+
+INSERT INTO `gurus` (`id`, `nama`, `gambar`, `created_at`, `updated_at`) VALUES
+(1, 'Lorem Ipsum is simply dummy text', 'guru/uRjqKLsL6DRhsgzFJ9CiLc74G53MjptDCjaPS4ox.jpg', '2023-02-16 19:20:31', '2023-02-16 19:20:31'),
+(2, 'Lorem Ipsum is simply dummy text', 'guru/JMRKdKOuFCR2PZ0TVkM0zhZNhuGeH4cao91IxKgQ.jpg', '2023-02-16 19:20:44', '2023-02-16 19:20:44'),
+(3, 'Lorem Ipsum is simply dummy text', 'guru/lILahc1QxD22eXx4KZEE36F0F47KxozkUiu6d8ZZ.jpg', '2023-02-16 19:20:58', '2023-02-16 19:20:58');
+
 -- --------------------------------------------------------
 
 --
@@ -128,7 +159,9 @@ CREATE TABLE `informasis` (
 --
 
 INSERT INTO `informasis` (`id`, `judul`, `deskripsi`, `gambar_informasi`, `created_at`, `updated_at`) VALUES
-(1, 'Kegiatan Sebelum', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>', 'informasi/JdjD4uDTA8zIp0VPgntDbmxSLSZGQnd9gW9LjuUy.jpg', '2023-02-06 06:10:47', '2023-02-06 06:10:47');
+(1, 'Kegiatan Sebelum Ramadhan', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>', 'informasi/JdjD4uDTA8zIp0VPgntDbmxSLSZGQnd9gW9LjuUy.jpg', '2023-02-06 06:10:47', '2023-02-15 03:22:30'),
+(2, 'Lorem Ipsum is simply dummy text', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>', 'informasi/5grJW0KoEhwFBoqF73w8O3abKL20Rf2NeHw69qO1.jpg', '2023-02-15 03:23:00', '2023-02-15 03:23:00'),
+(3, 'Lorem Ipsum is simply dummy text', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>', 'informasi/z1J4vG3fOowFdp0nbc89jt3VPMr0N7L2u3flMART.jpg', '2023-02-15 03:23:28', '2023-02-15 03:23:28');
 
 -- --------------------------------------------------------
 
@@ -145,6 +178,15 @@ CREATE TABLE `kegiatans` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `kegiatans`
+--
+
+INSERT INTO `kegiatans` (`id`, `judul`, `deskripsi`, `gambar_informasi`, `created_at`, `updated_at`) VALUES
+(1, 'Lorem Ipsum is simply dummy text', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>', 'kegiatan/9fCNIY1GEwA6NXkywFRg6DK98vvQjUqM5GK51Z5j.jpg', '2023-02-16 18:52:36', '2023-02-16 18:52:36'),
+(2, 'Lorem Ipsum is simply dummy text', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>', 'kegiatan/k321IxqukAXkycRslGEqmRjLsNoWplgPqQGX4Ow3.jpg', '2023-02-16 18:53:50', '2023-02-16 18:53:50'),
+(3, 'Lorem Ipsum is simply dummy text', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>', 'kegiatan/88qPWoMAQVkxk6VFz7dyrLHUZeNcw59Wcisyc1yk.jpg', '2023-02-16 18:54:13', '2023-02-16 18:54:13');
+
 -- --------------------------------------------------------
 
 --
@@ -159,6 +201,13 @@ CREATE TABLE `kontaks` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `kontaks`
+--
+
+INSERT INTO `kontaks` (`id`, `alamat`, `email`, `telepon`, `created_at`, `updated_at`) VALUES
+(1, 'Jl. Serbaguna No.49, Jadimulya, Kec. Gunungjati, Kabupaten Cirebon, Jawa Barat 45151', 'smpit.fatahillah@gmail.com', '0231-205713', '2023-02-16 19:27:08', '2023-02-16 19:27:08');
 
 -- --------------------------------------------------------
 
@@ -282,11 +331,19 @@ CREATE TABLE `pesans` (
 CREATE TABLE `prestasis` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `judul` varchar(255) NOT NULL,
-  `deskripsi` text NOT NULL,
   `gambar_prestasi` varchar(255) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `prestasis`
+--
+
+INSERT INTO `prestasis` (`id`, `judul`, `gambar_prestasi`, `created_at`, `updated_at`) VALUES
+(1, 'Lorem Ipsum is simply dummy textt', 'prestasi/lZsJ3Z1albgRB0XGL6YWXVcmnJ844UQsBMxXrinN.jpg', '2023-02-16 19:07:13', '2023-02-16 19:15:23'),
+(2, 'Lorem Ipsum is simply dummy text', 'prestasi/NvWWm4y0TcJMJqsxuuNeXCLmryzM1FAkZ5B2I0kM.jpg', '2023-02-16 19:10:35', '2023-02-16 19:10:35'),
+(3, 'Lorem Ipsum is simply dummy text', 'prestasi/NzMbeHIVytCXeL97uXaVfi9BhgTKEhCbzNMaviq0.jpg', '2023-02-16 19:11:35', '2023-02-16 19:11:35');
 
 -- --------------------------------------------------------
 
@@ -301,6 +358,15 @@ CREATE TABLE `profiles` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `profiles`
+--
+
+INSERT INTO `profiles` (`id`, `judul`, `deskripsi`, `created_at`, `updated_at`) VALUES
+(1, 'Aktif', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>', '2023-02-16 18:55:13', '2023-02-16 18:55:13'),
+(3, 'Inovatif', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>', '2023-02-16 18:57:06', '2023-02-16 18:57:06'),
+(4, 'Kreatif', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>', '2023-02-16 18:58:20', '2023-02-16 18:58:20');
 
 -- --------------------------------------------------------
 
@@ -317,6 +383,13 @@ CREATE TABLE `sambutans` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `sambutans`
+--
+
+INSERT INTO `sambutans` (`id`, `judul`, `deskripsi`, `gambar_sambutan`, `created_at`, `updated_at`) VALUES
+(1, 'Lorem Ipsum is simply dummy text', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>', 'sambutan/0aYih2IwfgD0zrgQMYzIoUrBEFA4WRRYJdjM0XS5.jpg', '2023-02-16 19:01:00', '2023-02-16 19:01:00');
+
 -- --------------------------------------------------------
 
 --
@@ -330,6 +403,15 @@ CREATE TABLE `siswas` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `siswas`
+--
+
+INSERT INTO `siswas` (`id`, `nama`, `gambar`, `created_at`, `updated_at`) VALUES
+(1, 'Lorem Ipsum is simply dummy text', 'siswa/nE1JKmUETDKNwHQVtWJaHRDTjhmYyQ2VNw0DzUDv.jpg', '2023-02-16 19:22:14', '2023-02-16 19:22:14'),
+(2, 'Lorem Ipsum is simply dummy text', 'siswa/QLwO77i6jKSgUWLaTXYgmr3n4ibwI8xvEmunTd6l.jpg', '2023-02-16 19:22:29', '2023-02-16 19:22:29'),
+(3, 'Lorem Ipsum is simply dummy text', 'siswa/nNUos4IoikgQ1Qg3UffFtTQr0kyfixAs7Nly2KUN.jpg', '2023-02-16 19:22:52', '2023-02-16 19:22:52');
 
 -- --------------------------------------------------------
 
@@ -346,6 +428,13 @@ CREATE TABLE `strukturs` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `strukturs`
+--
+
+INSERT INTO `strukturs` (`id`, `judul`, `deskripsi`, `gambar_struktur`, `created_at`, `updated_at`) VALUES
+(1, 'Lorem Ipsum is simply dummy text', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>', 'struktur/fz87mPHepKuCd1otyitxB0c9vhis4xpdWEgQJ2zl.jpg', '2023-02-16 19:06:31', '2023-02-16 19:06:31');
+
 -- --------------------------------------------------------
 
 --
@@ -360,6 +449,14 @@ CREATE TABLE `tentangs` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `tentangs`
+--
+
+INSERT INTO `tentangs` (`id`, `judul`, `deskripsi`, `gambar_tentang`, `created_at`, `updated_at`) VALUES
+(1, 'Visi', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>', 'tentang/vjST1ZfX305PqyGANaCS1vVaND6veeQgkyCt4AKh.jpg', '2023-02-16 19:01:48', '2023-02-16 19:01:48'),
+(2, 'Misi', '<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>', 'tentang/Upu0ZfzZuQ8mrUMSZIo76qy7dA9YecRG7q45IOhO.jpg', '2023-02-16 19:02:19', '2023-02-16 19:02:19');
 
 -- --------------------------------------------------------
 
@@ -560,13 +657,13 @@ ALTER TABLE `videos`
 -- AUTO_INCREMENT for table `carousels`
 --
 ALTER TABLE `carousels`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `ekstrakurikulers`
 --
 ALTER TABLE `ekstrakurikulers`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -578,7 +675,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `fasilitas`
 --
 ALTER TABLE `fasilitas`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `files`
@@ -590,25 +687,25 @@ ALTER TABLE `files`
 -- AUTO_INCREMENT for table `gurus`
 --
 ALTER TABLE `gurus`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `informasis`
 --
 ALTER TABLE `informasis`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `kegiatans`
 --
 ALTER TABLE `kegiatans`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `kontaks`
 --
 ALTER TABLE `kontaks`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `media`
@@ -638,37 +735,37 @@ ALTER TABLE `pesans`
 -- AUTO_INCREMENT for table `prestasis`
 --
 ALTER TABLE `prestasis`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `profiles`
 --
 ALTER TABLE `profiles`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `sambutans`
 --
 ALTER TABLE `sambutans`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `siswas`
 --
 ALTER TABLE `siswas`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `strukturs`
 --
 ALTER TABLE `strukturs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tentangs`
 --
 ALTER TABLE `tentangs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`
