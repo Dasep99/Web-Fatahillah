@@ -38,8 +38,8 @@ class CarouselController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'judul' => 'required|min:4',
-            'deskripsi' => 'required',
+            'judul' => '|min:4',
+            'deskripsi',
             'gambar' => 'required',
 
 

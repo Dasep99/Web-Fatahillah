@@ -27,7 +27,7 @@
                         @csrf
                         <div class="form-group">
                             <label>Judul</label>
-                            <input type="text" class="form-control" placeholder="Masukan Judul" name="judul" required>
+                            <input type="text" class="form-control" placeholder="Masukan Judul" name="judul">
 
                         </div>
 
